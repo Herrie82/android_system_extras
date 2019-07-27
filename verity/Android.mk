@@ -21,21 +21,21 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SHARED_LIBRARIES := libcrypto_utils libcrypto
 include $(BUILD_HOST_EXECUTABLE)
 
-include $(CLEAR_VARS)
-LOCAL_SRC_FILES := VeritySigner.java Utils.java
-LOCAL_MODULE := VeritySigner
-LOCAL_JAR_MANIFEST := VeritySigner.mf
-LOCAL_MODULE_TAGS := optional
-LOCAL_STATIC_JAVA_LIBRARIES := bouncycastle-host
-include $(BUILD_HOST_JAVA_LIBRARY)
+#include $(CLEAR_VARS)
+#LOCAL_SRC_FILES := VeritySigner.java Utils.java
+#LOCAL_MODULE := VeritySigner
+#LOCAL_JAR_MANIFEST := VeritySigner.mf
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_STATIC_JAVA_LIBRARIES := bouncycastle-host
+#include $(BUILD_HOST_JAVA_LIBRARY)
 
-include $(CLEAR_VARS)
-LOCAL_SRC_FILES := BootSignature.java VeritySigner.java Utils.java
-LOCAL_MODULE := BootSignature
-LOCAL_JAR_MANIFEST := BootSignature.mf
-LOCAL_MODULE_TAGS := optional
-LOCAL_STATIC_JAVA_LIBRARIES := bouncycastle-host
-include $(BUILD_HOST_JAVA_LIBRARY)
+#include $(CLEAR_VARS)
+#LOCAL_SRC_FILES := BootSignature.java VeritySigner.java Utils.java
+#LOCAL_MODULE := BootSignature
+#LOCAL_JAR_MANIFEST := BootSignature.mf
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_STATIC_JAVA_LIBRARIES := bouncycastle-host
+#include $(BUILD_HOST_JAVA_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := verity_verifier.cpp
